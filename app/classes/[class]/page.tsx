@@ -42,46 +42,58 @@ export default async function ClassDetailPage({
   ).length;
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-8">
+    <div className="container mx-auto px-4 py-6 sm:py-8">
+      <div className="mb-6 sm:mb-8">
         <h1
-          className={`text-4xl font-bold mb-2 text-balance ${classColors[className]}`}
+          className={`text-3xl sm:text-4xl font-bold mb-2 text-balance ${classColors[className]}`}
         >
           {className}
         </h1>
-        <p className="text-muted-foreground text-lg">
+        <p className="text-muted-foreground text-base sm:text-lg">
           Complete guide to {className} crowd control abilities
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-        <Card className="p-6">
-          <p className="text-sm text-muted-foreground mb-1">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
+        <Card className="p-4 sm:p-6">
+          <p className="text-xs sm:text-sm text-muted-foreground mb-1">
             Total CC Abilities
           </p>
-          <p className="text-3xl font-bold">{classAbilities.length}</p>
+          <p className="text-2xl sm:text-3xl font-bold">
+            {classAbilities.length}
+          </p>
         </Card>
-        <Card className="p-6">
-          <p className="text-sm text-muted-foreground mb-1">Dispellable</p>
-          <p className="text-3xl font-bold text-green-500">
+        <Card className="p-4 sm:p-6">
+          <p className="text-xs sm:text-sm text-muted-foreground mb-1">
+            Dispellable
+          </p>
+          <p className="text-2xl sm:text-3xl font-bold text-green-500">
             {dispellableCount}
           </p>
         </Card>
-        <Card className="p-6">
-          <p className="text-sm text-muted-foreground mb-1">Breaks on Damage</p>
-          <p className="text-3xl font-bold text-red-500">
+        <Card className="p-4 sm:p-6">
+          <p className="text-xs sm:text-sm text-muted-foreground mb-1">
+            Breaks on Damage
+          </p>
+          <p className="text-2xl sm:text-3xl font-bold text-red-500">
             {breaksOnDamageCount}
           </p>
         </Card>
-        <Card className="p-6">
-          <p className="text-sm text-muted-foreground mb-1">Talent Abilities</p>
-          <p className="text-3xl font-bold text-accent">{talentCount}</p>
+        <Card className="p-4 sm:p-6">
+          <p className="text-xs sm:text-sm text-muted-foreground mb-1">
+            Talent Abilities
+          </p>
+          <p className="text-2xl sm:text-3xl font-bold text-accent">
+            {talentCount}
+          </p>
         </Card>
       </div>
 
-      <Card className="p-6 mb-8">
-        <h2 className="text-2xl font-bold mb-4">DR Category Breakdown</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <Card className="p-4 sm:p-6 mb-6 sm:mb-8">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">
+          DR Category Breakdown
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {drCategoryBreakdown
             .filter((dr) => dr.count > 0)
             .map((dr) => (
@@ -97,8 +109,8 @@ export default async function ClassDetailPage({
       </Card>
 
       <Card>
-        <div className="p-6">
-          <h2 className="text-2xl font-bold mb-4">All Abilities</h2>
+        <div className="p-4 sm:p-6">
+          <h2 className="text-xl sm:text-2xl font-bold mb-4">All Abilities</h2>
         </div>
         <div className="overflow-x-auto">
           <Table>
