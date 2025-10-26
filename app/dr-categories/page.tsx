@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ccAbilities, drCategories, classColors } from "@/lib/cc-data";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -18,10 +19,39 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
+// Extract all unique class names from ccAbilities for the filter list
+const allClassNames = [
+  ...new Set(ccAbilities.map((ability) => ability.class)),
+].sort();
+
 export default function DRCategoriesPage() {
-  const getCategoryAbilities = (categoryName: string) => {
-    return ccAbilities.filter((a) => a.drCategory === categoryName);
+  const [selectedClasses, setSelectedClasses] =
+    useState<string[]>(allClassNames);
+
+  const handleClassToggle = (className: string) => {
+    setSelectedClasses((prev) => {
+      if (prev.includes(className)) {
+        // Prevent clearing the selection if only one class is selected
+        // Optional: If you want to force at least one class to be selected
+        // if (prev.length === 1) return prev;
+        return prev.filter((name) => name !== className);
+      } else {
+        return [...prev, className];
+      }
+    });
   };
+
+  const getCategoryAbilities = (categoryName: string) => {
+    // If no classes are selected, show nothing
+    if (selectedClasses.length === 0) return [];
+
+    return ccAbilities.filter(
+      (a) => a.drCategory === categoryName && selectedClasses.includes(a.class)
+    );
+  };
+
+  const isClassSelected = (className: string) =>
+    selectedClasses.includes(className);
 
   return (
     <div className="container mx-auto px-4 py-6 sm:py-8">
@@ -35,6 +65,7 @@ export default function DRCategoriesPage() {
         </p>
       </div>
 
+      {/* DR Explanation Card (unchanged) */}
       <Card className="p-4 sm:p-6 mb-6 sm:mb-8">
         <h2 className="text-xl sm:text-2xl font-bold mb-4">
           What are Diminishing Returns?
@@ -75,6 +106,47 @@ export default function DRCategoriesPage() {
         </div>
       </Card>
 
+      {/* 🚀 Updated Class Filter UI with Sticky Positioning */}
+      <Card className="sticky top-0 z-10 bg-background/95 backdrop-blur-sm p-4 sm:p-6 mb-6 sm:mb-8 border-b">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">Filter by Class</h2>
+        <div className="flex flex-wrap gap-2">
+          {allClassNames.map((className) => (
+            <Badge
+              key={className}
+              className={`
+                cursor-pointer text-sm sm:text-base px-3 py-1.5 transition-all duration-200 shadow-md
+                ${
+                  isClassSelected(className)
+                    ? "bg-primary text-primary-foreground border border-primary hover:bg-primary/90"
+                    : "bg-input/20 text-foreground border border-border hover:bg-input/40"
+                }
+              `}
+              onClick={() => handleClassToggle(className)}
+            >
+              {className}
+            </Badge>
+          ))}
+        </div>
+        <div className="mt-4 flex gap-2">
+          <Badge
+            variant="outline"
+            className="cursor-pointer text-xs sm:text-sm px-2.5 py-1 transition-colors duration-200 hover:bg-accent hover:text-accent-foreground"
+            onClick={() => setSelectedClasses(allClassNames)}
+          >
+            Select All
+          </Badge>
+          <Badge
+            variant="outline"
+            className="cursor-pointer text-xs sm:text-sm px-2.5 py-1 transition-colors duration-200 hover:bg-accent hover:text-accent-foreground"
+            // Only allow clearing if not all classes are already cleared, to prevent zero selection issues
+            onClick={() => setSelectedClasses([])}
+          >
+            Clear Selection
+          </Badge>
+        </div>
+      </Card>
+
+      {/* DR Categories List */}
       <div className="space-y-4">
         {drCategories.map((category) => {
           const abilities = getCategoryAbilities(category.name);
@@ -82,6 +154,9 @@ export default function DRCategoriesPage() {
             acc[ability.class] = (acc[ability.class] || 0) + 1;
             return acc;
           }, {} as Record<string, number>);
+
+          // Only display the category if there are abilities for the selected classes
+          if (abilities.length === 0) return null;
 
           return (
             <Card key={category.name}>
