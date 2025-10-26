@@ -208,6 +208,7 @@ export default function DatabasePage() {
                 <TableHead>Dispellable</TableHead>
                 <TableHead>Breaks on Damage</TableHead>
                 <TableHead>Specialization</TableHead>
+                <TableHead>Cooldown</TableHead>
                 <TableHead>Talent</TableHead>
               </TableRow>
             </TableHeader>
@@ -256,6 +257,9 @@ export default function DatabasePage() {
                     </TableCell>
                     <TableCell className="text-muted-foreground">
                       {ability.specialization}
+                    </TableCell>
+                    <TableCell className="text-muted-foreground">
+                      {ability.cooldown}
                     </TableCell>
                     <TableCell className="text-center">
                       {ability.talent === "Talent" ? (

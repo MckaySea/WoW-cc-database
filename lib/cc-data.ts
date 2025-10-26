@@ -8,6 +8,7 @@ export interface CCAbility {
   breaksOnDamage: boolean;
   specialization: string;
   talent: string;
+  cooldown: string;
 }
 
 export const ccAbilities: CCAbility[] = [
@@ -21,6 +22,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Death Knight",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "2",
@@ -32,6 +34,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Death Knight: Frost",
     talent: "Talent",
+    cooldown: "1min",
   },
   {
     id: "3",
@@ -43,6 +46,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Death Knight",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "4",
@@ -54,6 +58,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Death Knight: Unholy",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "5",
@@ -65,6 +70,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Death Knight: Unholy",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "6",
@@ -76,6 +82,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Death Knight",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "7",
@@ -87,6 +94,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "8",
@@ -98,6 +106,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "9",
@@ -109,6 +118,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid: Balance/Feral",
     talent: "Talent",
+    cooldown: "20sec (x3)",
   },
   {
     id: "10",
@@ -120,6 +130,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "11",
@@ -131,6 +142,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "12",
@@ -142,6 +154,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid: Feral",
     talent: "Base",
+    cooldown: "5min",
   },
   {
     id: "13",
@@ -153,6 +166,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid: Balance",
     talent: "Base",
+    cooldown: "5min",
   },
   {
     id: "14",
@@ -164,6 +178,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "10sec",
   },
   {
     id: "15",
@@ -175,6 +190,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid",
     talent: "Talent",
+    cooldown: "50sec",
   },
   {
     id: "16",
@@ -186,6 +202,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "10sec",
   },
   {
     id: "17",
@@ -197,6 +214,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Mage: All",
     talent: "Base",
+    cooldown: "30sec",
   },
   {
     id: "18",
@@ -208,6 +226,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "19",
@@ -219,6 +238,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Druid: Restoration",
     talent: "Base",
+    cooldown: "5min",
   },
   {
     id: "20",
@@ -230,6 +250,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid: Balance",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "21",
@@ -241,6 +262,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid",
     talent: "Talent",
+    cooldown: "15sec",
   },
   {
     id: "22",
@@ -252,6 +274,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "23",
@@ -263,6 +286,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid",
     talent: "Base",
+    cooldown: "15sec",
   },
   {
     id: "24",
@@ -274,6 +298,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Hunter: All",
     talent: "Base",
+    cooldown: "30sec",
   },
   {
     id: "25",
@@ -285,6 +310,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Hunter: All",
     talent: "Talent",
+    cooldown: "20sec",
   },
   {
     id: "26",
@@ -296,6 +322,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Hunter: All",
     talent: "Talent",
+    cooldown: "1min",
   },
   {
     id: "27",
@@ -307,6 +334,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Hunter: All",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "28",
@@ -318,6 +346,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Hunter: All",
     talent: "Base",
+    cooldown: "15sec",
   },
   {
     id: "29",
@@ -329,6 +358,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Hunter: All",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "30",
@@ -340,6 +370,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Hunter: All",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "31",
@@ -351,6 +382,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Hunter: All",
     talent: "Base",
+    cooldown: "30sec (x2)",
   },
   {
     id: "32",
@@ -362,6 +394,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Hunter: All",
     talent: "Base",
+    cooldown: "24sec",
   },
   {
     id: "33",
@@ -373,6 +406,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Mage: Fire",
     talent: "Base",
+    cooldown: "20sec",
   },
   {
     id: "34",
@@ -384,6 +418,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Mage: All",
     talent: "Base",
+    cooldown: "25sec",
   },
   {
     id: "35",
@@ -395,6 +430,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Mage: All",
     talent: "Base",
+    cooldown: "25sec",
   },
   {
     id: "36",
@@ -406,6 +442,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warrior",
     talent: "Talent",
+    cooldown: "40sec",
   },
   {
     id: "37",
@@ -417,6 +454,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warrior",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "38",
@@ -428,6 +466,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Mage: All",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "39",
@@ -439,6 +478,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Mage: All",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "40",
@@ -450,6 +490,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Mage: All",
     talent: "Talent",
+    cooldown: "20sec",
   },
   {
     id: "41",
@@ -461,6 +502,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Mage: All",
     talent: "Base",
+    cooldown: "24sec",
   },
   {
     id: "42",
@@ -472,6 +514,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Mage: All",
     talent: "Talent",
+    cooldown: "20sec",
   },
   {
     id: "43",
@@ -483,6 +526,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Monk",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "44",
@@ -494,6 +538,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Monk: Mistweaver",
     talent: "Base",
+    cooldown: "5min",
   },
   {
     id: "45",
@@ -505,6 +550,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "46",
@@ -516,6 +562,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk: Brewmaster",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "47",
@@ -527,6 +574,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk: Windwalker",
     talent: "Base",
+    cooldown: "25sec",
   },
   {
     id: "48",
@@ -538,6 +586,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "49",
@@ -549,6 +598,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "50",
@@ -560,6 +610,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Monk",
     talent: "Base",
+    cooldown: "15sec",
   },
   {
     id: "51",
@@ -571,6 +622,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "52",
@@ -582,6 +634,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Monk",
     talent: "Base",
+    cooldown: "15sec",
   },
   {
     id: "53",
@@ -593,6 +646,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Paladin",
     talent: "Talent",
+    cooldown: "1min",
   },
   {
     id: "54",
@@ -604,6 +658,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Paladin",
     talent: "Talent",
+    cooldown: "9sec",
   },
   {
     id: "55",
@@ -615,6 +670,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Paladin",
     talent: "Base",
+    cooldown: "2min",
   },
   {
     id: "56",
@@ -626,6 +682,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Paladin",
     talent: "Talent",
+    cooldown: "15sec",
   },
   {
     id: "57",
@@ -637,6 +694,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Paladin",
     talent: "Base",
+    cooldown: "2min",
   },
   {
     id: "58",
@@ -648,6 +706,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Paladin",
     talent: "Talent",
+    cooldown: "15sec",
   },
   {
     id: "59",
@@ -659,6 +718,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Paladin: Protection",
     talent: "Base",
+    cooldown: "15sec",
   },
   {
     id: "60",
@@ -670,6 +730,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest: Holy",
     talent: "Base",
+    cooldown: "30sec",
   },
   {
     id: "61",
@@ -681,6 +742,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "62",
@@ -692,6 +754,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Priest: Shadow",
     talent: "Base",
+    cooldown: "8sec",
   },
   {
     id: "63",
@@ -703,6 +766,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest: Shadow",
     talent: "Base",
+    cooldown: "45sec",
   },
   {
     id: "64",
@@ -714,6 +778,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Priest",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "65",
@@ -725,6 +790,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Priest",
     talent: "Base",
+    cooldown: "30sec",
   },
   {
     id: "66",
@@ -736,6 +802,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Priest",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "67",
@@ -747,6 +814,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest: Shadow",
     talent: "Base",
+    cooldown: "45sec",
   },
   {
     id: "68",
@@ -758,6 +826,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest: Shadow",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "69",
@@ -769,6 +838,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest",
     talent: "Base",
+    cooldown: "5min",
   },
   {
     id: "70",
@@ -780,6 +850,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Priest",
     talent: "Talent",
+    cooldown: "N/A",
   },
   {
     id: "71",
@@ -791,6 +862,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Priest: Shadow",
     talent: "Base",
+    cooldown: "45sec",
   },
   {
     id: "72",
@@ -802,6 +874,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Rogue",
     talent: "Talent",
+    cooldown: "10sec",
   },
   {
     id: "73",
@@ -813,6 +886,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "20sec",
   },
   {
     id: "74",
@@ -824,6 +898,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "75",
@@ -835,6 +910,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "76",
@@ -846,6 +922,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "77",
@@ -857,6 +934,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "10sec",
   },
   {
     id: "78",
@@ -868,6 +946,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "2min",
   },
   {
     id: "79",
@@ -879,6 +958,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Rogue",
     talent: "Talent",
+    cooldown: "N/A",
   },
   {
     id: "80",
@@ -890,6 +970,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Rogue",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "81",
@@ -901,6 +982,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Shaman: All",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "82",
@@ -912,6 +994,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Shaman: All",
     talent: "Talent",
+    cooldown: "6sec",
   },
   {
     id: "83",
@@ -923,6 +1006,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Shaman: All",
     talent: "Base",
+    cooldown: "45sec",
   },
   {
     id: "84",
@@ -934,6 +1018,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Shaman: All",
     talent: "Base",
+    cooldown: "40sec",
   },
   {
     id: "85",
@@ -945,6 +1030,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Shaman: All",
     talent: "Base",
+    cooldown: "45sec",
   },
   {
     id: "86",
@@ -956,6 +1042,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Shaman: All",
     talent: "Base",
+    cooldown: "10sec",
   },
   {
     id: "87",
@@ -967,6 +1054,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Shaman: All",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "88",
@@ -978,6 +1066,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock: All",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "89",
@@ -989,6 +1078,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock: Destruction",
     talent: "Base",
+    cooldown: "10min",
   },
   {
     id: "90",
@@ -1000,6 +1090,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock: All",
     talent: "Base",
+    cooldown: "30sec",
   },
   {
     id: "91",
@@ -1011,6 +1102,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "92",
@@ -1022,6 +1114,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warlock: All",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "93",
@@ -1033,6 +1126,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warlock: All",
     talent: "Base",
+    cooldown: "40sec",
   },
   {
     id: "94",
@@ -1044,6 +1138,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warlock: Demonology",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "95",
@@ -1055,6 +1150,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warlock",
     talent: "Base",
+    cooldown: "6sec",
   },
   {
     id: "96",
@@ -1066,6 +1162,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warlock",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "97",
@@ -1077,6 +1174,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock",
     talent: "Talent",
+    cooldown: "45sec",
   },
   {
     id: "98",
@@ -1088,6 +1186,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock",
     talent: "Talent",
+    cooldown: "30sec",
   },
   {
     id: "99",
@@ -1099,6 +1198,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock: Affliction",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "100",
@@ -1110,6 +1210,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warlock",
     talent: "Base",
+    cooldown: "N/A",
   },
   {
     id: "101",
@@ -1121,6 +1222,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock: All",
     talent: "Base",
+    cooldown: "24sec",
   },
   {
     id: "102",
@@ -1132,6 +1234,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warlock: All",
     talent: "Base",
+    cooldown: "24sec",
   },
   {
     id: "103",
@@ -1143,6 +1246,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warrior",
     talent: "Talent",
+    cooldown: "40sec",
   },
   {
     id: "104",
@@ -1154,6 +1258,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warrior",
     talent: "Talent",
+    cooldown: "20sec",
   },
   {
     id: "105",
@@ -1165,6 +1270,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Druid: Guardian",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "106",
@@ -1176,6 +1282,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Mage: Fire",
     talent: "Base",
+    cooldown: "2min",
   },
   {
     id: "107",
@@ -1187,6 +1294,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warrior",
     talent: "Base",
+    cooldown: "1min",
   },
   {
     id: "108",
@@ -1198,6 +1306,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: true,
     specialization: "Warrior",
     talent: "Base",
+    cooldown: "1.5min",
   },
   {
     id: "109",
@@ -1209,6 +1318,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warrior",
     talent: "Talent",
+    cooldown: "1min",
   },
   {
     id: "110",
@@ -1220,6 +1330,7 @@ export const ccAbilities: CCAbility[] = [
     breaksOnDamage: false,
     specialization: "Warrior",
     talent: "Base",
+    cooldown: "20sec",
   },
 ];
 
@@ -1284,7 +1395,7 @@ export const drCategories = [
 export const classColors: Record<string, string> = {
   Mage: "text-cyan-400",
   Druid: "text-orange-400",
-  Warrior: "text-amber-600",
+  Warrior: "text-yellow-900",
   Rogue: "text-yellow-400",
   Paladin: "text-pink-400",
   Priest: "text-gray-300",

@@ -168,7 +168,12 @@ export default function ComparePage() {
                       <Badge variant="secondary">No</Badge>
                     )}
                   </div>
-
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-1">
+                      Cooldown
+                    </p>
+                    <p className="text-sm">{ability.cooldown}</p>
+                  </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">
                       Specialization

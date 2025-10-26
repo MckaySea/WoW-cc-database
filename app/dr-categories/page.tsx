@@ -210,6 +210,7 @@ export default function DRCategoriesPage() {
                               <TableHead>Duration</TableHead>
                               <TableHead>Dispellable</TableHead>
                               <TableHead>Breaks on Damage</TableHead>
+                              <TableHead>Cooldown</TableHead>
                               <TableHead>Specialization</TableHead>
                             </TableRow>
                           </TableHeader>
@@ -242,6 +243,9 @@ export default function DRCategoriesPage() {
                                   ) : (
                                     <Badge variant="secondary">No</Badge>
                                   )}
+                                </TableCell>
+                                <TableCell className="text-muted-foreground">
+                                  {ability.cooldown}
                                 </TableCell>
                                 <TableCell className="text-muted-foreground">
                                   {ability.specialization}

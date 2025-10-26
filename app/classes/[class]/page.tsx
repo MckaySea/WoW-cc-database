@@ -122,6 +122,7 @@ export default async function ClassDetailPage({
                 <TableHead>Dispellable</TableHead>
                 <TableHead>Breaks on Damage</TableHead>
                 <TableHead>Specialization</TableHead>
+                <TableHead>Cooldown</TableHead>
                 <TableHead>Type</TableHead>
               </TableRow>
             </TableHeader>
@@ -155,6 +156,9 @@ export default async function ClassDetailPage({
                   </TableCell>
                   <TableCell className="text-muted-foreground">
                     {ability.specialization}
+                  </TableCell>
+                  <TableCell className="text-muted-foreground">
+                    {ability.cooldown}
                   </TableCell>
                   <TableCell>
                     {ability.talent === "Talent" ? (
