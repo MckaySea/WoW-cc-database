@@ -1,5 +1,6 @@
 import type React from "react";
 import type { Metadata } from "next";
+import Script from "next/script"; // <-- ADDED
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { Navigation } from "@/components/navigation";
@@ -25,6 +26,23 @@ export default function RootLayout({
         <Navigation />
         <main className="min-h-screen">{children}</main>
         <Analytics />
+
+        {/* Wowhead Tooltips Configuration Script */}
+        <Script id="wowhead-config" strategy="afterInteractive">
+          {`
+            var whTooltips = {
+              colorLinks: true,      // Color the link based on item quality
+              iconizeLinks: true,    // Show item icon next to the link
+              renameLinks: false     // Do not rename links (set to true to use Wowhead's name)
+            };
+          `}
+        </Script>
+
+        {/* Wowhead Tooltips Core Script */}
+        <Script
+          src="//wow.zamimg.com/js/tooltips.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

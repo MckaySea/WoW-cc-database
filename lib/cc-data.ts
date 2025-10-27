@@ -9,6 +9,7 @@ export interface CCAbility {
   specialization: string;
   talent: string;
   cooldown: string;
+  wowhead_link: string;
 }
 
 export const ccAbilities: CCAbility[] = [
@@ -20,9 +21,11 @@ export const ccAbilities: CCAbility[] = [
     duration: "20s",
     dispellable: true,
     breaksOnDamage: false,
-    specialization: "Death Knight",
+    specialization: "Frost/Unholy",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=61077/chains-of-ice" data-wowhead="spell=61077">Chains of Ice</a>',
   },
   {
     id: "2",
@@ -35,6 +38,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Death Knight: Frost",
     talent: "Talent",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=48721/remorseless-winter" data-wowhead="spell=48721">Remorseless Winter (at 5 stacks)</a>',
   },
   {
     id: "3",
@@ -47,6 +52,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Death Knight",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=108194/asphyxiate" data-wowhead="spell=108194">Asphyxiate</a>',
   },
   {
     id: "4",
@@ -59,6 +66,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Death Knight: Unholy",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=91797/gnaw" data-wowhead="spell=91797">Monstrous Blow (Dark Transformation)</a>',
   },
   {
     id: "5",
@@ -71,6 +80,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Death Knight: Unholy",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=91797/gnaw" data-wowhead="spell=91797">Gnaw</a>',
   },
   {
     id: "6",
@@ -83,6 +94,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Death Knight",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=7867/strangulate" data-wowhead="spell=7867">Strangulate</a>',
   },
   {
     id: "7",
@@ -95,6 +108,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=99/disorienting-roar" data-wowhead="spell=99">Disorienting Roar</a>',
   },
   {
     id: "8",
@@ -107,6 +122,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=339/entangling-roots" data-wowhead="spell=339">Entangling Roots</a>',
   },
   {
     id: "9",
@@ -119,6 +136,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid: Balance/Feral",
     talent: "Talent",
     cooldown: "20sec (x3)",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=48560/entangling-roots" data-wowhead="spell=48560">Entangling Roots (Force of Nature Treants)</a>',
   },
   {
     id: "10",
@@ -131,6 +150,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=53312/natures-grasp" data-wowhead="spell=53312">Nature\'s Grasp</a>',
   },
   {
     id: "11",
@@ -143,6 +164,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=102359/mass-entanglement" data-wowhead="spell=102359">Mass Entanglement</a>',
   },
   {
     id: "12",
@@ -155,6 +178,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid: Feral",
     talent: "Base",
     cooldown: "5min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=122/frost-nova" data-wowhead="spell=122">Symbiosis Frost Nova (Feral)</a>',
   },
   {
     id: "13",
@@ -167,6 +192,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid: Balance",
     talent: "Base",
     cooldown: "5min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=853/hammer-of-justice" data-wowhead="spell=853">Symbiosis HoJ (Boomy)</a>',
   },
   {
     id: "14",
@@ -179,6 +206,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "10sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=22570/maim" data-wowhead="spell=22570">Maim</a>',
   },
   {
     id: "15",
@@ -191,6 +220,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Talent",
     cooldown: "50sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=99160/mighty-bash" data-wowhead="spell=99160">Mighty Bash</a>',
   },
   {
     id: "16",
@@ -203,6 +234,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "10sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=9005/pounce" data-wowhead="spell=9005">Pounce</a>',
   },
   {
     id: "17",
@@ -215,6 +248,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Base",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=44572/deep-freeze" data-wowhead="spell=44572">Deep Freeze</a>',
   },
   {
     id: "18",
@@ -227,6 +262,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=2137/hibernate" data-wowhead="spell=2137">Hibernate</a>',
   },
   {
     id: "19",
@@ -239,6 +276,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid: Restoration",
     talent: "Base",
     cooldown: "5min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=686/intimidating-shout" data-wowhead="spell=686">Symbiosis Intimidating Shout (Resto)</a>',
   },
   {
     id: "20",
@@ -251,6 +290,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid: Balance",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=78675/solar-beam" data-wowhead="spell=78675">Solar Beam</a>',
   },
   {
     id: "21",
@@ -263,6 +304,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Talent",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=102352/wild-charge" data-wowhead="spell=102352">Wild Charge Immobilize</a>',
   },
   {
     id: "22",
@@ -275,6 +318,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=33786/cyclone" data-wowhead="spell=33786">Cyclone</a>',
   },
   {
     id: "23",
@@ -287,6 +332,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid",
     talent: "Base",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=770/faerie-fire" data-wowhead="spell=770">Faerie Fire (Glyph of Fae Silence)</a>',
   },
   {
     id: "24",
@@ -299,6 +346,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Base",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=19503/scatter-shot" data-wowhead="spell=19503">Scatter Shot</a>',
   },
   {
     id: "25",
@@ -311,6 +360,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Talent",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=328328/narrow-escape" data-wowhead="spell=328328">Narrow Escape</a>',
   },
   {
     id: "26",
@@ -323,6 +374,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Talent",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=19577/intimidate" data-wowhead="spell=19577">Intimidate</a>',
   },
   {
     id: "27",
@@ -335,6 +388,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=109248/binding-shot" data-wowhead="spell=109248">Binding Shot</a>',
   },
   {
     id: "28",
@@ -347,6 +402,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Base",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=3355/freezing-trap" data-wowhead="spell=3355">Freezing Trap</a>',
   },
   {
     id: "29",
@@ -359,6 +416,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=86395/wyvern-sting" data-wowhead="spell=86395">Wyvern Sting</a>',
   },
   {
     id: "30",
@@ -371,6 +430,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=1513/scare-beast" data-wowhead="spell=1513">Scare Beast</a>',
   },
   {
     id: "31",
@@ -383,6 +444,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Base",
     cooldown: "30sec (x2)",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=194345/entrapment" data-wowhead="spell=194345">Entrapment</a>',
   },
   {
     id: "32",
@@ -395,6 +458,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Hunter: All",
     talent: "Base",
     cooldown: "24sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=154876/silencing-shot" data-wowhead="spell=154876">Silencing Shot</a>',
   },
   {
     id: "33",
@@ -407,6 +472,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: Fire",
     talent: "Base",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=31661/dragons-breath" data-wowhead="spell=31661">Dragon\'s Breath</a>',
   },
   {
     id: "34",
@@ -419,6 +486,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Base",
     cooldown: "25sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=122/frost-nova" data-wowhead="spell=122">Frost Nova</a>',
   },
   {
     id: "35",
@@ -431,6 +500,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Base",
     cooldown: "25sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=33395/freeze" data-wowhead="spell=33395">Freeze (Water Ele)</a>',
   },
   {
     id: "36",
@@ -443,6 +514,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Talent",
     cooldown: "40sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=46968/shockwave" data-wowhead="spell=46968">Shockwave</a>',
   },
   {
     id: "37",
@@ -455,6 +528,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=107570/storm-bolt" data-wowhead="spell=107570">Storm Bolt</a>',
   },
   {
     id: "38",
@@ -467,6 +542,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=118/polymorph" data-wowhead="spell=118">Polymorph</a>',
   },
   {
     id: "39",
@@ -479,6 +556,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=82676/ring-of-frost" data-wowhead="spell=82676">Ring of Frost</a>',
   },
   {
     id: "40",
@@ -491,6 +570,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Talent",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=111301/ice-ward" data-wowhead="spell=111301">Ice Ward</a>',
   },
   {
     id: "41",
@@ -503,6 +584,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Base",
     cooldown: "24sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=2139/counterspell" data-wowhead="spell=2139">Improved Counterspell</a>',
   },
   {
     id: "42",
@@ -515,6 +598,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: All",
     talent: "Talent",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=102051/frostjaw" data-wowhead="spell=102051">Frostjaw</a>',
   },
   {
     id: "43",
@@ -527,6 +612,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=116095/disable" data-wowhead="spell=116095">Disable (If already Snared)</a>',
   },
   {
     id: "44",
@@ -539,6 +626,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk: Mistweaver",
     talent: "Base",
     cooldown: "5min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=339/entangling-roots" data-wowhead="spell=339">Symbiosis (MW) Entangling Roots</a>',
   },
   {
     id: "45",
@@ -551,6 +640,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=115802/leg-sweep" data-wowhead="spell=115802">Leg Sweep</a>',
   },
   {
     id: "46",
@@ -563,6 +654,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk: Brewmaster",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=116781/clash" data-wowhead="spell=116781">Clash</a>',
   },
   {
     id: "47",
@@ -575,6 +668,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk: Windwalker",
     talent: "Base",
     cooldown: "25sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=117964/fists-of-fury" data-wowhead="spell=117964">Fists of Fury</a>',
   },
   {
     id: "48",
@@ -587,6 +682,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=132039/charging-ox-wave" data-wowhead="spell=132039">Charging Ox Wave</a>',
   },
   {
     id: "49",
@@ -599,6 +696,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=117368/grapple-weapon" data-wowhead="spell=117368">Grapple Weapon</a>',
   },
   {
     id: "50",
@@ -611,6 +710,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Base",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=115292/paralysis" data-wowhead="spell=115292">Paralysis</a>',
   },
   {
     id: "51",
@@ -623,6 +724,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=116844/ring-of-peace" data-wowhead="spell=116844">Ring of Peace</a>',
   },
   {
     id: "52",
@@ -635,6 +738,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Monk",
     talent: "Base",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=116709/spear-hand-strike" data-wowhead="spell=116709">Spear Hand Strike</a>',
   },
   {
     id: "53",
@@ -647,6 +752,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin",
     talent: "Talent",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=853/hammer-of-justice" data-wowhead="spell=853">Hammer(Fist) of Justice</a>',
   },
   {
     id: "54",
@@ -659,6 +766,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin",
     talent: "Talent",
     cooldown: "9sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=104270/holy-wrath" data-wowhead="spell=104270">Holy Wrath (Undead)</a>',
   },
   {
     id: "55",
@@ -671,6 +780,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin",
     talent: "Base",
     cooldown: "2min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=105421/blinding-light" data-wowhead="spell=105421">Blinding Light (Glyphed)</a>',
   },
   {
     id: "56",
@@ -683,6 +794,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin",
     talent: "Talent",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=20066/repentance" data-wowhead="spell=20066">Repentance</a>',
   },
   {
     id: "57",
@@ -695,6 +808,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin",
     talent: "Base",
     cooldown: "2min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=105421/blinding-light" data-wowhead="spell=105421">Blinding Light</a>',
   },
   {
     id: "58",
@@ -707,6 +822,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin",
     talent: "Talent",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=10326/turn-evil" data-wowhead="spell=10326">Turn Evil</a>',
   },
   {
     id: "59",
@@ -719,6 +836,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Paladin: Protection",
     talent: "Base",
     cooldown: "15sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=31935/avengers-shield" data-wowhead="spell=31935">Avenger\'s Shield</a>',
   },
   {
     id: "60",
@@ -731,6 +850,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest: Holy",
     talent: "Base",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=88625/holy-word-chastise" data-wowhead="spell=88625">Holy Word Chastise</a>',
   },
   {
     id: "61",
@@ -743,6 +864,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=108920/void-tendrils" data-wowhead="spell=108920">Void Tendril\'s Grasp</a>',
   },
   {
     id: "62",
@@ -755,6 +878,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest: Shadow",
     talent: "Base",
     cooldown: "8sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=8092/mind-blast" data-wowhead="spell=8092">Mind Blast (Glyphed)</a>',
   },
   {
     id: "63",
@@ -767,6 +892,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest: Shadow",
     talent: "Base",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=64044/psychic-horror" data-wowhead="spell=64044">Psychic Horror</a>',
   },
   {
     id: "64",
@@ -779,6 +906,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=9484/shackle-undead" data-wowhead="spell=9484">Shackle Undead</a>',
   },
   {
     id: "65",
@@ -791,6 +920,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest",
     talent: "Base",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=10890/psychic-scream" data-wowhead="spell=10890">Psychic Scream</a>',
   },
   {
     id: "66",
@@ -803,6 +934,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=135046/psychic-terror" data-wowhead="spell=135046">Psychic Terror (Psyfiend)</a>',
   },
   {
     id: "67",
@@ -815,6 +948,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest: Shadow",
     talent: "Base",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=64044/psychic-horror" data-wowhead="spell=64044">Psychic Horror</a>',
   },
   {
     id: "68",
@@ -827,6 +962,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest: Shadow",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=123011/silent-resolve" data-wowhead="spell=123011">Vampiric Touch Dispelled</a>',
   },
   {
     id: "69",
@@ -839,6 +976,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest",
     talent: "Base",
     cooldown: "5min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=33786/cyclone" data-wowhead="spell=33786">Symbiosis Cyclone (Holy)</a>',
   },
   {
     id: "70",
@@ -851,6 +990,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest",
     talent: "Talent",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=605/dominate-mind" data-wowhead="spell=605">Dominate Mind</a>',
   },
   {
     id: "71",
@@ -863,6 +1004,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Priest: Shadow",
     talent: "Base",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=15487/silence" data-wowhead="spell=15487">Silence</a>',
   },
   {
     id: "72",
@@ -875,6 +1018,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Talent",
     cooldown: "10sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=112966/paralytic-poison" data-wowhead="spell=112966">Paralytic Poison (Shiv)</a>',
   },
   {
     id: "73",
@@ -887,6 +1032,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=408/kidney-shot" data-wowhead="spell=408">Kidney Shot (full)</a>',
   },
   {
     id: "74",
@@ -899,6 +1046,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=1833/cheap-shot" data-wowhead="spell=1833">Cheap Shot</a>',
   },
   {
     id: "75",
@@ -911,6 +1060,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=137687/dismantle" data-wowhead="spell=137687">Dismantle</a>',
   },
   {
     id: "76",
@@ -923,6 +1074,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=6770/sap" data-wowhead="spell=6770">Sap</a>',
   },
   {
     id: "77",
@@ -935,6 +1088,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "10sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=1776/gouge" data-wowhead="spell=1776">Gouge</a>',
   },
   {
     id: "78",
@@ -947,6 +1102,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "2min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=2094/blind" data-wowhead="spell=2094">Blind</a>',
   },
   {
     id: "79",
@@ -959,6 +1116,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Talent",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=112966/paralytic-poison" data-wowhead="spell=112966">Paralysis (Paralytic Poison)</a>',
   },
   {
     id: "80",
@@ -971,6 +1130,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Rogue",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=1330/garrote" data-wowhead="spell=1330">Garrote</a>',
   },
   {
     id: "81",
@@ -983,6 +1144,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=51485/earthgrab-totem" data-wowhead="spell=51485">Earthgrab (Totem)</a>',
   },
   {
     id: "82",
@@ -995,6 +1158,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Talent",
     cooldown: "6sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=8050/freeze" data-wowhead="spell=8050">Freeze</a>',
   },
   {
     id: "83",
@@ -1007,6 +1172,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Base",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=118905/capacitor-totem" data-wowhead="spell=118905">Static Charge (Capacitor Totem)</a>',
   },
   {
     id: "84",
@@ -1019,6 +1186,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Base",
     cooldown: "40sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=90788/pulverize" data-wowhead="spell=90788">Pulverize (Earth Ele)</a>',
   },
   {
     id: "85",
@@ -1031,6 +1200,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Base",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=51514/hex" data-wowhead="spell=51514">Hex</a>',
   },
   {
     id: "86",
@@ -1043,6 +1214,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Base",
     cooldown: "10sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=61882/earthquake" data-wowhead="spell=61882">Earthquake</a>',
   },
   {
     id: "87",
@@ -1055,6 +1228,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Shaman: All",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=17926/bind-elemental" data-wowhead="spell=17926">Bind Elemental</a>',
   },
   {
     id: "88",
@@ -1067,6 +1242,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: All",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=30283/shadowfury" data-wowhead="spell=30283">Shadowfury</a>',
   },
   {
     id: "89",
@@ -1079,6 +1256,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: Destruction",
     talent: "Base",
     cooldown: "10min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=1122/summon-infernal" data-wowhead="spell=1122">Summon Infernal</a>',
   },
   {
     id: "90",
@@ -1091,6 +1270,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: All",
     talent: "Base",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=89766/axe-toss" data-wowhead="spell=89766">Axe Toss (Felguard)</a>',
   },
   {
     id: "91",
@@ -1103,6 +1284,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=35102/disarm" data-wowhead="spell=35102">Disarm (Voidwalker)</a>',
   },
   {
     id: "92",
@@ -1115,6 +1298,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: All",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=5782/fear" data-wowhead="spell=5782">Fear</a>',
   },
   {
     id: "93",
@@ -1127,6 +1312,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: All",
     talent: "Base",
     cooldown: "40sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=6215/howl-of-terror" data-wowhead="spell=6215">Howl of Terror</a>',
   },
   {
     id: "94",
@@ -1139,6 +1326,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: Demonology",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/search?q=Sleep" data-wowhead="spell=0">Sleep</a>',
   },
   {
     id: "95",
@@ -1151,6 +1340,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock",
     talent: "Base",
     cooldown: "6sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=6358/seduction" data-wowhead="spell=6358">Seduction (Succubus)</a>',
   },
   {
     id: "96",
@@ -1163,6 +1354,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=118699/mesmerize" data-wowhead="spell=118699">Mesmerize (Shivarra)</a>',
   },
   {
     id: "97",
@@ -1175,6 +1368,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock",
     talent: "Talent",
     cooldown: "45sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=6789/mortal-coil" data-wowhead="spell=6789">Mortal Coil</a>',
   },
   {
     id: "98",
@@ -1187,6 +1382,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock",
     talent: "Talent",
     cooldown: "30sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=111397/blood-horror" data-wowhead="spell=111397">Blood Horror</a>',
   },
   {
     id: "99",
@@ -1199,6 +1396,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: Affliction",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=30108/unstable-affliction" data-wowhead="spell=30108">Unstable Affliction (Silence when dispelled)</a>',
   },
   {
     id: "100",
@@ -1211,7 +1410,10 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock",
     talent: "Base",
     cooldown: "N/A",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=710/banish" data-wowhead="spell=710">Banish</a>',
   },
+
   {
     id: "101",
     class: "Warlock",
@@ -1223,6 +1425,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: All",
     talent: "Base",
     cooldown: "24sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=19647/spell-lock" data-wowhead="spell=19647">Spell Lock (Fel Hound)</a>',
   },
   {
     id: "102",
@@ -1235,6 +1439,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warlock: All",
     talent: "Base",
     cooldown: "24sec",
+    wowhead_link:
+      '<a href="https://www.google.com/search?q=https://www.wowhead.com/mop-classic/spell%3D119827/optical-blast" data-wowhead="spell=119827">Optical Blast (Observer)</a>',
   },
   {
     id: "103",
@@ -1247,6 +1453,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Talent",
     cooldown: "40sec",
+    wowhead_link:
+      '<a href="https://www.google.com/search?q=https://www.wowhead.com/mop-classic/spell%3D107574/staggering-shout" data-wowhead="spell=107574">Staggering Shout</a>',
   },
   {
     id: "104",
@@ -1259,6 +1467,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Talent",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.google.com/search?q=https://www.wowhead.com/mop-classic/spell%3D100418/warbringer" data-wowhead="spell=100418">Warbringer</a>',
   },
   {
     id: "105",
@@ -1271,6 +1481,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Druid: Guardian",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.google.com/search?q=https://www.wowhead.com/mop-classic/spell%3D102558/bear-hug" data-wowhead="spell=102558">Bear Hug</a>',
   },
   {
     id: "106",
@@ -1283,6 +1495,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Mage: Fire",
     talent: "Base",
     cooldown: "2min",
+    wowhead_link:
+      '<a href="https://www.google.com/search?q=https://www.wowhead.com/mop-classic/spell%3D102148/impact" data-wowhead="spell=102148">Combustion Impact</a>',
   },
   {
     id: "107",
@@ -1295,6 +1509,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Base",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=676/disarm" data-wowhead="spell=676">Disarm</a>',
   },
   {
     id: "108",
@@ -1307,6 +1523,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Base",
     cooldown: "1.5min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=5246/intimidating-shout" data-wowhead="spell=5246">Intimidating Shout</a>',
   },
   {
     id: "109",
@@ -1319,6 +1537,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Talent",
     cooldown: "1min",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=118000/dragon-roar" data-wowhead="spell=118000">Dragon Roar</a>',
   },
   {
     id: "110",
@@ -1331,6 +1551,8 @@ export const ccAbilities: CCAbility[] = [
     specialization: "Warrior",
     talent: "Base",
     cooldown: "20sec",
+    wowhead_link:
+      '<a href="https://www.wowhead.com/mop-classic/spell=100/charge" data-wowhead="spell=100">Charge</a>',
   },
 ];
 

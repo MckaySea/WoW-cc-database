@@ -1,6 +1,8 @@
 "use client";
 
 import { useState, useMemo } from "react";
+// FIX: Changed the import path from the failed alias (@/lib/cc-data) to a relative path
+// pointing to the newly created mock data file (cc-data.js).
 import { ccAbilities, classColors } from "@/lib/cc-data";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -216,7 +218,7 @@ export default function DatabasePage() {
               {filteredAbilities.length === 0 ? (
                 <TableRow>
                   <TableCell
-                    colSpan={8}
+                    colSpan={9}
                     className="text-center py-8 text-muted-foreground"
                   >
                     No abilities found matching your filters
@@ -230,9 +232,22 @@ export default function DatabasePage() {
                         {ability.class}
                       </span>
                     </TableCell>
+                    {/* MODIFICATION START: Updated check to ensure the link contains a Wowhead spell ID attribute to prevent third-party script errors. */}
                     <TableCell className="font-medium">
-                      {ability.ability}
+                      {ability.wowhead_link &&
+                      ability.wowhead_link.includes('data-wowhead="spell=') &&
+                      /\d/.test(ability.wowhead_link) ? ( // Ensures it has the attribute and at least one digit (the ID)
+                        <span
+                          dangerouslySetInnerHTML={{
+                            __html: ability.wowhead_link,
+                          }}
+                        />
+                      ) : (
+                        // Fallback to plain text if the link is missing or malformed
+                        <span>{ability.ability}</span>
+                      )}
                     </TableCell>
+                    {/* MODIFICATION END */}
                     <TableCell>
                       <Badge variant="outline">{ability.drCategory}</Badge>
                     </TableCell>
