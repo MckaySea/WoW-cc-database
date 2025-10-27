@@ -1,8 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
-// FIX: Changed the import path from the failed alias (@/lib/cc-data) to a relative path
-// pointing to the newly created mock data file (cc-data.js).
+import { useState, useMemo, useEffect } from "react";
 import { ccAbilities, classColors } from "@/lib/cc-data";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -70,6 +68,15 @@ export default function DatabasePage() {
     dispellableOnly,
     breaksOnDamageOnly,
   ]);
+
+  // ✅ WOWHEAD FIX — reinitialize tooltips/icons whenever filteredAbilities changes
+  useEffect(() => {
+    if (typeof window !== "undefined" && (window as any).$WowheadPower) {
+      (window as any).$WowheadPower.refreshLinks();
+    }
+  }, [filteredAbilities, showFilters]);
+
+  // ✅ END FIX
 
   const clearFilters = () => {
     setSearchQuery("");
@@ -232,22 +239,22 @@ export default function DatabasePage() {
                         {ability.class}
                       </span>
                     </TableCell>
-                    {/* MODIFICATION START: Updated check to ensure the link contains a Wowhead spell ID attribute to prevent third-party script errors. */}
+
+                    {/* Wowhead Link Rendering */}
                     <TableCell className="font-medium">
                       {ability.wowhead_link &&
                       ability.wowhead_link.includes('data-wowhead="spell=') &&
-                      /\d/.test(ability.wowhead_link) ? ( // Ensures it has the attribute and at least one digit (the ID)
+                      /\d/.test(ability.wowhead_link) ? (
                         <span
                           dangerouslySetInnerHTML={{
                             __html: ability.wowhead_link,
                           }}
                         />
                       ) : (
-                        // Fallback to plain text if the link is missing or malformed
                         <span>{ability.ability}</span>
                       )}
                     </TableCell>
-                    {/* MODIFICATION END */}
+
                     <TableCell>
                       <Badge variant="outline">{ability.drCategory}</Badge>
                     </TableCell>

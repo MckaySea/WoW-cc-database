@@ -137,7 +137,7 @@ export const ccAbilities: CCAbility[] = [
     talent: "Talent",
     cooldown: "20sec (x3)",
     wowhead_link:
-      '<a href="https://www.wowhead.com/mop-classic/spell=48560/entangling-roots" data-wowhead="spell=48560">Entangling Roots (Force of Nature Treants)</a>',
+      '<a href="https://www.wowhead.com/mop-classic/spell=339/entangling-roots" data-wowhead="spell=339">Entangling Roots</a>',
   },
   {
     id: "10",
